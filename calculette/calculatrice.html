@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculatrice</title>
+	<link rel="stylesheet" type="text/css" href="calculatrice.css">
+</head>
+<body>
+
+	<div id="panneau">
+		<div id="text">
+			<input type="text" id="txt">
+		</div>
+
+		<div class="button1">
+			
+			<button onclick="affichage('7')">7</button>
+			<button onclick="affichage('8')">8</button>
+			<button onclick="affichage('9')">9</button>
+			<button onclick="affichage('/')" style="margin-right:27px;">/</button>
+			<button onclick="efface()">←</button>
+			<button onclick="efface1()">C</button>
+			<button onclick="affichage('4')">4</button>
+			<button onclick="affichage('5')">5</button>
+			<button onclick="affichage('6')">6</button>
+			<button onclick="affichage('*')" style="margin-right:27px;">x</button>
+			<button onclick="affichage('(')">(</button>
+			<button onclick="affichage(')')">)</button>
+			<button onclick="affichage('1')">1</button>
+			<button onclick="affichage('2')">2</button>
+			<button onclick="affichage('3')">3</button>
+			<button onclick="affichage('-')" style="margin-right:100px;">-</button>
+			<button onclick="affichage('0')">0</button>
+			<button onclick="affichage('.')">.</button>
+			<button onclick="affichage('%')">%</button>
+			<button onclick="affichage('+')">+</button>
+			<button onclick="calcule1()" id="plus">=</button>
+
+
+
+		</div>
+
+	</div>
+	
+	<script src="calculatrice.js"></script>
+</body>
+</html>
