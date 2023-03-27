@@ -1,18 +1,18 @@
 class BasicCalculator {
     constructor() {
-      this.nombre1 = ''; // variable qui stocke le nombre saisi
+      this.nombre1 = ''; 
     }
   
     affichage(chiffre) {
-      document.getElementById('txt').value += chiffre; //affiche le chiffre du boutton selectionné
+      document.getElementById('txt').value += chiffre; 
     }
   
     efface() {
-      document.getElementById('txt').value = document.getElementById('txt').value.slice(0, -1); //affiche la même chose sans le dernier élément
+      document.getElementById('txt').value = document.getElementById('txt').value.slice(0, -1); 
     }
   
     efface1() {
-      document.getElementById('txt').value = ''; // remplace la valeur actuelle par rien
+      document.getElementById('txt').value = ''; 
       this.nombre1 = '';
     }
   
@@ -20,10 +20,10 @@ class BasicCalculator {
       this.nombre1 = document.getElementById('txt').value;
   
       try {
-          document.getElementById("txt").value = eval(this.nombre1); // affiche le résultat du calcule
+          document.getElementById("txt").value = eval(this.nombre1); 
           this.nombre1 = '';
       } catch (error) {
-          window.alert("Une erreur s'est produite : " + error.message); // affiche une erreur si eval(this.nombre1) n'existe pas
+          window.alert("Une erreur s'est produite : " + error.message); 
       }
     }
   }
